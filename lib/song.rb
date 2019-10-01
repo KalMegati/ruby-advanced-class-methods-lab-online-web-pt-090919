@@ -28,4 +28,7 @@ class Song
     instance
   end
   
+  def self.find_by_name(name)
+    @@all.find { |tune| tune == name }
+  
 end
