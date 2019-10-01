@@ -50,7 +50,7 @@ class Song
     instance = self.new
     instance.name = parsed[1]
     instance.artist_name = parsed[0]
-    
+    instance
   end
   
 end
