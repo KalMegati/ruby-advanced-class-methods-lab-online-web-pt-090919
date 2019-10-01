@@ -41,7 +41,7 @@ class Song
   end
   
   def self.alphabetical
-    @@all.sort
+    @@all.sort { |a, b| a.to_s <=> b.to_s }
   end
   
 end
