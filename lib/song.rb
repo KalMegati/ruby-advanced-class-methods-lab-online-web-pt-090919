@@ -16,6 +16,10 @@ class Song
     instance
   end
   
-  def self.new_by_name
+  def self.new_by_name(name)
+    instance = self.create
+    @name = name
+    @name
+  end
   
 end
