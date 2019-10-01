@@ -6,6 +6,10 @@ class Song
     @@all
   end
 
+  def name
+    @name
+  end
+
   def save
     self.class.all << self
   end
@@ -19,7 +23,7 @@ class Song
   def self.new_by_name(name)
     instance = self.create
     @name = name
-    @name
+    name
   end
   
 end
