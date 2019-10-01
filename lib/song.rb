@@ -53,4 +53,10 @@ class Song
     instance
   end
   
+  def self.create_from_filename(mpthree)
+    instance = self.new_from_filename(mpthree)
+    instance.save
+    instance
+  end
+  
 end
