@@ -23,7 +23,9 @@ class Song
   end
   
   def self.create_by_name(name)
-    
+    instance = self.create
+    instance.name = name
+    instance
   end
   
 end
