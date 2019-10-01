@@ -47,7 +47,8 @@ class Song
   def self.new_from_filename(mpthree)
     parsed = mpthree.split(" - ")
     parsed[1].chomp!(".mp3")
-    instance = self.create_by_name(parsed[1])
+    instance = self.new
+    instance.name = parsed[1]
     instance.artist_name = parsed[0]
     
   end
