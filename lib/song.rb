@@ -45,7 +45,8 @@ class Song
   end
   
   def self.new_from_filename(mpthree)
-    mpthree.split(" - ")
-    
+    parsed = mpthree.split(" - ")
+    parsed[1]
+    instance = self.create_by_name
   
 end
