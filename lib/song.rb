@@ -49,5 +49,7 @@ class Song
     parsed[1].chomp!(".mp3")
     instance = self.create_by_name(parsed[1])
     instance.artist = parsed[0]
+    
+  end
   
 end
